@@ -59,6 +59,11 @@ class EShareBox extends CWidget
 	 * @var array Definitions for sharing services .
 	 */
 	protected $shareDefinitions = array(
+		'vkontakte' => array(
+			'url' => 'http://vkontakte.ru/share.php?url={url}&title={title}',
+			'title' => 'Share this on vk.com',
+			'name' => 'Вконтакте'
+		),
 		'facebook' => array(
 			'url' => 'https://www.facebook.com/share.php?u={url}&t={title}',
 			'title' => 'Share this on Facebook',
@@ -69,45 +74,10 @@ class EShareBox extends CWidget
 			'title' => 'Tweet This!',
 			'name' => 'Twitter',
 		),
-		'google-buzz' => array(
-			'url' => 'http://www.google.com/buzz/post?url={url}',
-			'title' => 'Post on GoogleBuzz',
-			'name' => 'Google Buzz'
-		),
-		'stumbleupon' => array(
-			'url' => 'http://www.stumbleupon.com/submit?url={url}&title={title}',
-			'title' => 'Stumble upon something good? Share it on StumbleUpon',
-			'name' => 'StumbleUpon'
-		),
-		'digg' => array(
-			'url' => 'http://digg.com/submit?phase=2&url={url}&title={title}',
-			'title' => 'Digg this!',
-			'name' => 'Digg',
-		),
-		'delicious' => array(
-			'url' => 'http://delicious.com/post?url={url}&title={title}',
-			'title' => 'Share this on del.icio.us',
-			'name' => 'Delicious',
-		),
-		'linkedin' => array(
-			'url' => 'http://www.linkedin.com/shareArticle?mini=true&url={url}&title={title}',
-			'title' => 'Share this on LinkedIn',
-			'name' => 'LinkedIn',
-		),
-		'reddit' => array(
-			'url' => 'http://reddit.com/submit?url={url}&title={title}',
-			'title' => 'Share this on Reddit',
-			'name' => 'Reddit',
-		),
-		'technorati' => array(
-			'url' => 'http://technorati.com/faves?add={url}',
-			'title' => 'Share this on Technorati',
-			'name' => 'Technorati',
-		),
-		'newsvine' => array(
-			'url' => 'http://www.newsvine.com/_tools/seed&save?u={url}',
-			'title' => 'Bookmark on Newsvine',
-			'name' => 'Newsvine',
+		'google-plus' => array(
+			'url' => 'https://m.google.com/app/plus/x/?v=compose&content={title} - {url}',
+			'title' => 'Post on Google+'
+			'name' => 'Google+'
 		),
 			/*
 			  'email' => array(
